@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Csa</h1>
+
+<p>valami.</p>
+
+<a href="test.html">test.html</a><br>
+<a href="lol.html">lol.html</a><br>
+<a href="files">FILES</a><br>
+<a href="https://drive.google.com/drive/folders/1Fa0E3128_Fq0UTCtHmctLFYdK7BNsH0O">nem jatekok</a><br>
+
+
+
+
+
+
+<script>
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+if((window.fullScreen) ||
+   (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
+    
+} else {
+    window.close();
+}
+
+
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+    window.close();
+    return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    window.close();
+    return false;
+
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    window.close();
+    return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    window.close();
+    return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    window.close();
+    return false;
+}
+}
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

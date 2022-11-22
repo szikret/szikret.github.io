@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<style> 
+    Body {
+      font-family: Calibri, Helvetica, sans-serif;
+      background-color: rgb(255, 255, 255);
+    }
+    button { 
+           background-color: #4CAF50; 
+           width: 100%;
+            color: rgb(255, 255, 255); 
+            padding: 15px; 
+            margin: 10px 0px; 
+            border: none; 
+            cursor: pointer; 
+             } 
+     form { 
+            border: 3px solid #ffffff; 
+        } 
+     input[type=text], input[type=password] { 
+            width: 100%; 
+            margin: 8px 0;
+            padding: 12px 20px; 
+            display: inline-block; 
+            border: 2px solid green; 
+            box-sizing: border-box; 
+        }
+     button:hover { 
+            opacity: 0.7; 
+        } 
+      .cancelbtn { 
+            width: auto; 
+            padding: 10px 18px;
+            margin: 10px 5px;
+        } 
+          
+       
+     .container { 
+            padding: 25px; 
+            background-color: rgb(255, 255, 255);
+        } 
+    </style>
+<head>
+<title>Belepes</title>
+<script language="JavaScript">
+<!--hide
+
+var password;
+var pass1="nemtom";
+
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+if((window.fullScreen) ||
+   (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
+    
+} else {
+    window.close();
+}
+
+
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+    window.close();
+    return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    window.close();
+    return false;
+
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    window.close();
+    return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    window.close();
+    return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    window.close();
+    return false;
+}
+if(event.altKey){
+    return false;
+}
+}
+
+
+
+/*
+
+password=prompt('Mi a jelszo?\nLEPJ F11 MODBA',' ');
+
+if (password==pass1)
+  {
+  alert('A jelszo helyes!');
+  window.location = "eloszto.html";
+   }
+else
+   {
+   alert('A jelszo helytelen!');
+    window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+*/
+//-->
+
+
+function myFunction(){
+
+    var textBox = document.getElementById('jelszoinput');
+    if (textBox.value == "nemtom")
+    {       
+        location.href="eloszto.html";
+    }else{
+        location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+}
+
+//NEM LEHET MEGNYITNI A WDT t ÉS    UJRATOLTENI SE LEHET AZ OLDALT
+/*window.onload = function(event){
+    window.onresize = function(event){
+    window.close();
+}
+}*/
+
+
+function meretezve(){
+    if (window.innerWidth < 1920) {
+        location.href="about:blank";
+    }
+    if (window.outerHeight < 1080) {
+        location.href="about:blank";
+    }
+}
+
+
+
+
+
+</script>
+</head>
+
+
+
+<body onresize="meretezve()" onload="meretezve()">
+<center> <h1> Belepes a szuper titkos nasa weboldalra </h1> </center> 
+
+    
+<!--<label>Username : </label>
+<input type="text" placeholder="Enter Username" name="username" required> -->
+<!--<label>Password : </label> -->
+<input id="jelszoinput" type="password" placeholder="Jelszo" name="password" >
+<button onclick="myFunction()">Login</button> 
+    
+        
+
+
+
+
+</body>
